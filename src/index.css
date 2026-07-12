@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Exact 1:1 Color Palette */
+  --color-nav-blue: #4871C4; 
+  --color-cream: #FFF9E6;
+  --color-bg-blue: #E8F0FF;
+  --color-text-blue: #2B579A;
+  --color-text-gray: #6B7280;
+  --color-text-dark: #1E3A8A;
+  --color-btn-blue: #4871C4;
+  --color-btn-yellow: #FCE69B;
+  
+  /* Fallback to Switzer for everything as requested */
+  --font-sans: 'Switzer', sans-serif;
+  --font-dynamite: 'Switzer', sans-serif; 
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('./assets/fonts/Switzer-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('./assets/fonts/Switzer-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Switzer', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-blue);
+  overflow-x: hidden;
+}
