@@ -16,6 +16,7 @@ import focusSessionRoutes from './routes/focusSessions.js';
 import { initializeSocket } from './socket/index.js';
 
 const app = express();
+app.set('trust proxy', 1);
 const httpServer = createServer(app);
 const allowedOrigins = (process.env.CLIENT_ORIGINS || process.env.CLIENT_ORIGIN || 'http://localhost:5173,http://127.0.0.1:5173')
   .split(',').map((item) => item.trim()).filter(Boolean);
